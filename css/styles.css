@@ -15,6 +15,14 @@
   --letter-spacing-primary: 0.03em;
 }
 /* Прописуем глобальные распостраненные свойства */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   background-color: var(--background-primary);
   color: var(--text-primary);
