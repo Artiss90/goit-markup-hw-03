@@ -1,0 +1,198 @@
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #f5f4fa;
+  --background-dark: #2f303a;
+  --text-primary: #757575;
+  --text-head: #212121;
+  --text-white: #ffffff;
+  --accent: #2196f3;
+  --line-color: #ececec;
+  --icone-color: #afb1b8;
+  --border-project: #eeeeee;
+  --font-weight: 400;
+  --font-size-primary: 14px;
+  --line-height-primary: 1.19;
+  --letter-spacing-primary: 0.03em;
+}
+/* Прописуем глобальные распостраненные свойства */
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  font-family: 'Roboto', sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
+  letter-spacing: var(--letter-spacing-primary);
+}
+footer {
+  background-color: var(--background-dark);
+}
+/* убираем маркировку списка */
+ul {
+  list-style: none;
+}
+/* убираем стиль ссилок */
+a {
+  /* убираем подчёркивания */
+  text-decoration: none;
+  /* убираем курсив */
+  font-style: normal;
+  /* добавляем наследование */
+  color: inherit;
+  font-family: inherit;
+}
+/* Оглавления страниц */
+.title {
+  color: var(--text-head);
+}
+/* Логотип сайта */
+.site-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--accent);
+}
+.footer-logo {
+  font-size: 22px;
+}
+.logo-studio {
+  color: var(--text-head);
+}
+.site-logo.footer-logo > .logo-studio {
+  color: var(--text-white);
+}
+/* Навигация */
+.site-nav > .list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-head);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+/* Фишка "Мы тут" */
+.site-nav .link.current {
+  color: var(--accent);
+}
+/* Адресс */
+.address-list .link {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.address-list .item:hover,
+.address-list .item:focus {
+  color: var(--accent);
+}
+.footer .address-list .link {
+  line-height: 1.17;
+  letter-spacing: var(--letter-spacing-primary);
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .address-list .map {
+  line-height: 1.17;
+  letter-spacing: var(--letter-spacing-primary);
+  color: var(--text-white);
+  font-style: normal;
+}
+/* Герой */
+.hero {
+  width: 1600px;
+  height: 600px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--text-white);
+}
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+  background: var(--accent);
+  color: var(--text-white);
+}
+/* Функции (Характерные черты) */
+.section .title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-head);
+}
+.section .text {
+  line-height: 1.71;
+  /* or 171% */
+  color: var(--text-primary);
+}
+/* Род деятельности (occupation) */
+.section .title-section {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--text-head);
+}
+.section .on-dark {
+  color: var(--text-white);
+}
+/* Наша команда (Team) */
+/* Ссилаемся на предидущую секцию */
+.shadow {
+  background-color: var(--background-secondary);
+}
+.section .team {
+  font-weight: 500;
+  font-size: 16px;
+}
+.section .work {
+  font-size: 16px;
+  color: var(--text-primary);
+}
+/* <!-- Постоянные клиенты --> */
+/* Ссилаемся на предидущую секцию */
+/* Футтер */
+/* Ссилаемся на предидущую секцию */
+.developed {
+  font-size: 12px;
+  line-height: 2;
+  /* or 200% */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Страница 2 "Портфолио" */
+/* Фильтр */
+.section .filter .radio {
+  background: var(--background-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  color: var(--text-head);
+}
+.section .filter .radio:hover,
+.section .filter .radio:focus {
+  background: var(--accent);
+  color: var(--text-white);
+}
+/* Проекты */
+.section .pro {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section .pro.on-dark {
+  line-height: 1.56;
+  letter-spacing: var(--letter-spacing-primary);
+  background: var(--accent);
+}
+.section .is-filter {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-primary);
+}
