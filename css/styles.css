@@ -32,6 +32,9 @@ body {
   line-height: var(--line-height-primary);
   letter-spacing: var(--letter-spacing-primary);
 }
+.is-hidden {
+  display: none;
+}
 footer {
   background-color: var(--background-dark);
 }
