@@ -40,8 +40,12 @@ body {
 }
 /* основние стили елементов */
 .container {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Оглавления страниц */
@@ -53,8 +57,13 @@ footer {
 }
 /* убираем маркировку списка */
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+/* обнуляем р */
+p {
+  margin: 0;
 }
 /* убираем стиль ссилок */
 a {
@@ -66,16 +75,17 @@ a {
   color: inherit;
   font-family: inherit;
 }
+
 /* Блок шапки */
+
 .site-header {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
   height: 81px;
-  width: 1170px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
+
 /* Логотип сайта */
+
 .site-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -95,15 +105,18 @@ a {
 .footer .logo-studio {
   color: var(--text-white);
 }
+
 /* Навигация */
+
 .site-nav {
   display: flex;
 }
 .site-nav > .list {
   display: flex;
   margin-left: 85px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -120,13 +133,16 @@ a {
 .site-nav .item + .item {
   margin-left: 50px;
 }
+
 /* Адресс */
+
 .address-list {
   display: flex;
   /* margin-left: 305px; */
   margin-left: auto;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+  align-items: center;
 }
 .address-list .link {
   line-height: 1.14;
@@ -211,11 +227,26 @@ margin-bottom: 32px;
   font-size: 16px;
   color: var(--text-primary);
 }
+
 /* <!-- Постоянные клиенты --> */
 /* Ссилаемся на предидущую секцию */
+
 /* Футтер */
 /* Ссилаемся на предидущую секцию */
-.developed {
+.footer .address-blok {
+  flex-direction: column;
+}
+.footer .address-list {
+  flex-direction: column;
+}
+.footer.container {
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer.container .developed {
+  align-self: flex-end;
+  align-content: center;
+
   font-size: 12px;
   line-height: 2;
   /* or 200% */
@@ -223,6 +254,7 @@ margin-bottom: 32px;
 }
 
 /* Страница 2 "Портфолио" */
+
 /* Фильтр */
 .section .filter .radio {
   background: var(--background-secondary);
@@ -237,7 +269,9 @@ margin-bottom: 32px;
   background: var(--accent);
   color: var(--text-white);
 }
+
 /* Проекты */
+
 .section .pro {
   font-size: 18px;
   line-height: 2;
