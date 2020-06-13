@@ -420,6 +420,25 @@ margin-bottom: 32px;
 }
 
 /* Проекты */
+.section.project {
+  display: flex;
+}
+.project .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.project .item {
+  display: flex;
+  width: calc((100% - 60px) / 3);
+  margin-top: 30px;
+}
+.project .item:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+/* .project .link {
+  display: flex;
+} */
 
 .section .pro {
   font-size: 18px;
