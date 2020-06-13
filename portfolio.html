@@ -22,7 +22,7 @@
           <li class="item"><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
-      <address>
+      <address class="address-blok-header">
         <!-- добавляем aria-label <a href="" aria-label=""></a> -->
         <ul class="address-list">
           <li class="item">
@@ -156,20 +156,18 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
-      <div>
+    <footer class="footer container">
+      <div class="address-blok item-colomn">
         <a class="site-logo footer-logo" href="./" lang="en"
           ><span>Web </span><span class="logo-studio">Studio</span></a
         >
         <address class="address-list">
           <p class="map">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul>
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
+          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
       </div>
-      <div class="section">
+      <div class="section item-colomn">
         <b class="title on-dark">Присоединяйтесь</b>
         <ul>
           <li>
@@ -186,12 +184,14 @@
           </li>
         </ul>
       </div>
-      <div class="section">
+      <div class="section item-colomn">
         <b class="title on-dark">Подпишитесь на рассылку</b>
         <a class="button" href="">Подписаться</a>
         <a href="" aria-label="значок самолётика"></a>
       </div>
-      <p class="developed">2020 | Developed by GoIT Students</p>
+      <div class="developed item-colomn">
+        <p>2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>
