@@ -41,6 +41,7 @@ body {
 /* основние стили елементов */
 .container {
   display: flex;
+  margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -189,9 +190,10 @@ margin-bottom: 32px;
   font-style: normal;
 }
 /* Герой */
-.hero {
+.hero.container {
   flex-direction: column;
   align-items: center;
+  margin-top: 0;
 
   height: 600px;
   background: rgba(47, 48, 58, 0.8);
@@ -229,8 +231,6 @@ margin-bottom: 32px;
 
 .section.feature {
   height: 251px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .feature .list {
   display: flex;
@@ -257,6 +257,24 @@ margin-bottom: 32px;
   color: var(--text-primary);
 }
 /* Род деятельности (occupation) */
+.section.activity {
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+}
+.activity .title-section {
+  display: flex;
+  align-self: center;
+}
+.activity .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.activity .item + .item {
+  margin-left: 30px;
+}
 .section .title-section {
   font-weight: bold;
   font-size: 36px;
@@ -266,12 +284,46 @@ margin-bottom: 32px;
 .section .on-dark {
   color: var(--text-white);
 }
+
 /* Наша команда (Team) */
+
 /* Ссилаемся на предидущую секцию */
+.section.our-team {
+  height: 702px;
+  display: flex;
+  flex-direction: column;
+}
+.our-team .title-section {
+  display: flex;
+  align-self: center;
+  margin-top: 94px;
+}
+.our-team .list-team {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.our-team .item + .item {
+  margin-left: 30px;
+}
+.our-team .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-team .title.name {
+  margin-top: 30px;
+}
+.our-team .title.work {
+  margin-top: 10px;
+}
+.our-team .list-social {
+  margin-top: 16px;
+}
 .shadow {
   background-color: var(--background-secondary);
 }
-.section .team {
+.section .name {
   font-weight: 500;
   font-size: 16px;
 }
@@ -281,9 +333,19 @@ margin-bottom: 32px;
 }
 
 /* <!-- Постоянные клиенты --> */
-/* Ссилаемся на предидущую секцию */
 
+/* Ссилаемся на предидущую секцию */
+.section.clients {
+  display: flex;
+  flex-direction: column;
+  height: 182px;
+}
+.clients .title-section {
+  display: flex;
+  align-self: center;
+}
 /* Футтер */
+
 /* Ссилаемся на предидущую секцию */
 .footer .address-blok {
   display: flex;
