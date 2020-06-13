@@ -387,6 +387,21 @@ margin-bottom: 32px;
 /* Страница 2 "Портфолио" */
 
 /* Фильтр */
+.section.head-filter {
+  display: flex;
+  height: 54px;
+  justify-content: center;
+}
+.head-filter .filter {
+  display: flex;
+  flex-direction: row;
+}
+.head-filter .item {
+  height: 38px;
+}
+.head-filter .item + .item {
+  margin-left: 8px;
+}
 .section .filter .radio {
   background: var(--background-secondary);
   font-weight: 500;
@@ -394,11 +409,14 @@ margin-bottom: 32px;
   line-height: 1.62;
   /* identical to box height, or 162% */
   color: var(--text-head);
+  border-radius: 4px;
+  border-color: transparent;
 }
 .section .filter .radio:hover,
 .section .filter .radio:focus {
   background: var(--accent);
   color: var(--text-white);
+  border-color: transparent;
 }
 
 /* Проекты */
