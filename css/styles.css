@@ -41,7 +41,7 @@ body {
 /* основние стили елементов */
 .container {
   display: flex;
-  margin-top: 94px;
+  margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -102,7 +102,7 @@ a {
 .site-header {
   align-items: center;
   justify-content: space-between;
-  height: 81px;
+  margin-bottom: 0;
 }
 
 /* Логотип сайта */
@@ -193,7 +193,6 @@ margin-bottom: 32px;
 .hero.container {
   flex-direction: column;
   align-items: center;
-  margin-top: 0;
 
   height: 600px;
   background: rgba(47, 48, 58, 0.8);
@@ -372,6 +371,7 @@ margin-bottom: 32px;
   justify-content: space-between;
   align-items: baseline;
   height: 253px;
+  margin-bottom: 0;
 }
 .footer .site-logo {
   margin-top: 45px;
@@ -396,15 +396,13 @@ margin-bottom: 32px;
 /* Фильтр */
 .section.head-filter {
   display: flex;
-  height: 54px;
   justify-content: center;
+  margin-top: 93px;
+  margin-bottom: 34px;
 }
 .head-filter .filter {
   display: flex;
   flex-direction: row;
-}
-.head-filter .item {
-  height: 38px;
 }
 .head-filter .item + .item {
   margin-left: 8px;
@@ -438,10 +436,12 @@ margin-bottom: 32px;
 .project .item {
   display: flex;
   width: calc((100% - 60px) / 3);
-  margin-top: 30px;
 }
 .project .item:not(:nth-child(3n + 1)) {
   margin-left: 30px;
+}
+.project .item:not(:nth-child(-n + 3)) {
+  margin-top: 30px;
 }
 /* .project .link {
   display: flex;
