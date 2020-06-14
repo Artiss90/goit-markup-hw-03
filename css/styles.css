@@ -320,6 +320,13 @@ margin-bottom: 32px;
 .our-team .list-social {
   margin-top: 16px;
 }
+.list-social {
+  margin-top: 20px;
+  display: flex;
+}
+.item-social + .item-social {
+  margin-left: 10px;
+}
 .shadow {
   background-color: var(--background-secondary);
 }
