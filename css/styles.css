@@ -104,7 +104,9 @@ a {
   justify-content: space-between;
   margin-bottom: 0;
 }
-
+.site-header.portfolio {
+  margin-bottom: 93px;
+}
 /* Логотип сайта */
 
 .site-logo {
@@ -194,7 +196,7 @@ margin-bottom: 32px;
   flex-direction: column;
   align-items: center;
 
-  height: 600px;
+  /* height: 600px; */
   background: rgba(47, 48, 58, 0.8);
 }
 .hero .title {
@@ -229,7 +231,6 @@ margin-bottom: 32px;
 /* Функции (Характерные черты) */
 
 .section.feature {
-  height: 251px;
 }
 .feature .list {
   display: flex;
@@ -257,7 +258,6 @@ margin-bottom: 32px;
 }
 /* Род деятельности (occupation) */
 .section.activity {
-  height: 386px;
   display: flex;
   flex-direction: column;
 }
@@ -288,7 +288,6 @@ margin-bottom: 32px;
 
 /* Ссилаемся на предидущую секцию */
 .section.our-team {
-  height: 702px;
   display: flex;
   flex-direction: column;
 }
@@ -344,7 +343,6 @@ margin-bottom: 32px;
 .section.clients {
   display: flex;
   flex-direction: column;
-  height: 182px;
 }
 .clients .title-section {
   display: flex;
@@ -370,7 +368,6 @@ margin-bottom: 32px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  height: 253px;
   margin-bottom: 0;
 }
 .footer .site-logo {
@@ -397,7 +394,7 @@ margin-bottom: 32px;
 .section.head-filter {
   display: flex;
   justify-content: center;
-  margin-top: 93px;
+
   margin-bottom: 34px;
 }
 .head-filter .filter {
