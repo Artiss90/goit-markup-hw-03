@@ -102,10 +102,9 @@ a {
 .site-header {
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0;
 }
-.site-header.portfolio {
-  margin-bottom: 93px;
+.site-header.first-header {
+  margin-bottom: 0;
 }
 /* Логотип сайта */
 
