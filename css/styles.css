@@ -41,7 +41,6 @@ body {
 /* основние стили елементов */
 .container {
   display: flex;
-  margin-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -103,9 +102,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.site-header.first-header {
-  margin-bottom: 0;
-}
+
 /* Логотип сайта */
 
 .site-logo {
@@ -191,12 +188,14 @@ margin-bottom: 32px;
   font-style: normal;
 }
 /* Герой */
+.hero-section {
+  background: rgba(47, 48, 58, 0.8);
+}
 .hero.container {
   flex-direction: column;
   align-items: center;
 
   /* height: 600px; */
-  background: rgba(47, 48, 58, 0.8);
 }
 .hero .title {
   justify-items: center;
@@ -230,6 +229,7 @@ margin-bottom: 32px;
 /* Функции (Характерные черты) */
 
 .section.feature {
+  padding-top: 94px;
 }
 .feature .list {
   display: flex;
@@ -259,9 +259,11 @@ margin-bottom: 32px;
 .section.activity {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .activity .title-section {
-  display: flex;
   align-self: center;
 }
 .activity .list {
@@ -289,16 +291,16 @@ margin-bottom: 32px;
 .section.our-team {
   display: flex;
   flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team .title-section {
-  display: flex;
   align-self: center;
-  margin-top: 94px;
 }
 .our-team .list-team {
   display: flex;
-  margin-top: 50px;
   justify-content: space-between;
+  padding-top: 50px;
 }
 .our-team .item + .item {
   margin-left: 30px;
@@ -342,9 +344,11 @@ margin-bottom: 32px;
 .section.clients {
   display: flex;
   flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
 }
 .clients .title-section {
-  display: flex;
   align-self: center;
 }
 /* Футтер */
@@ -372,29 +376,32 @@ margin-bottom: 32px;
 .footer .site-logo {
   margin-top: 45px;
 }
-.footer.container .developed {
-  width: calc(100%);
-  margin-bottom: 21px;
-  text-align: center;
-  align-self: flex-end;
+.item-colomn {
+  width: calc(100% / 3);
+}
+.copyright {
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  margin-bottom: 0;
 
   font-size: 12px;
   line-height: 2;
   /* or 200% */
   color: rgba(255, 255, 255, 0.4);
 }
-.item-colomn {
-  width: calc(100% / 3);
-}
-
 /* Страница 2 "Портфолио" */
+
+.main-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Фильтр */
 .section.head-filter {
   display: flex;
   justify-content: center;
-
-  margin-bottom: 34px;
+  padding-bottom: 34px;
 }
 .head-filter .filter {
   display: flex;
