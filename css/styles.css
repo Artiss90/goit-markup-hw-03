@@ -370,11 +370,12 @@ margin-bottom: 32px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+  padding-top: 45px;
   padding-bottom: 28px;
 }
-.footer .site-logo {
+/* .footer .site-logo {
   margin-top: 45px;
-}
+} */
 .item-colomn {
   width: calc(100% / 3);
 }
