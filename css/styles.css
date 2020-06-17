@@ -38,6 +38,7 @@ body {
 .is-hidden {
   width: 0;
   height: 0;
+  color: rgba(0, 0, 0, 0);
 }
 /* основние стили елементов */
 .container {
@@ -447,9 +448,18 @@ margin-bottom: 32px;
 .project .item:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
-/* .project .link {
-  display: flex;
-} */
+.project .perimeter {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+.project .link {
+  /* display: block; */
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 
 .section .pro {
   font-size: 18px;
