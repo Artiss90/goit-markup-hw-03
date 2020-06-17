@@ -36,7 +36,8 @@ body {
 }
 /* делаем невидимые заголовки */
 .is-hidden {
-  display: none;
+  width: 0;
+  height: 0;
 }
 /* основние стили елементов */
 .container {
@@ -259,7 +260,6 @@ margin-bottom: 32px;
 .section.activity {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -346,7 +346,6 @@ margin-bottom: 32px;
   flex-direction: column;
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-bottom: 0;
 }
 .clients .title-section {
   align-self: center;
@@ -371,7 +370,7 @@ margin-bottom: 32px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0;
+  padding-bottom: 28px;
 }
 .footer .site-logo {
   margin-top: 45px;
@@ -383,7 +382,8 @@ margin-bottom: 32px;
   justify-content: center;
   padding-top: 18px;
   padding-bottom: 21px;
-  margin-bottom: 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   font-size: 12px;
   line-height: 2;
