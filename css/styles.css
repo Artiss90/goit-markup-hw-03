@@ -266,12 +266,12 @@ margin-bottom: 32px;
 }
 .activity .title-section {
   align-self: center;
+  margin-bottom: 50px;
 }
 .activity .list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
 }
 .activity .item + .item {
   margin-left: 30px;
@@ -301,7 +301,7 @@ margin-bottom: 32px;
 .our-team .list-team {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .our-team .item + .item {
   margin-left: 30px;
@@ -350,6 +350,7 @@ margin-bottom: 32px;
 }
 .clients .title-section {
   align-self: center;
+  margin-bottom: 50px;
 }
 /* Футтер */
 
@@ -403,7 +404,7 @@ margin-bottom: 32px;
 .section.head-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 .head-filter .filter {
   display: flex;
